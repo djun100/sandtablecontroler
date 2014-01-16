@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">沙盘控制</string>
+    
+    <string name="server_setting">服务器设置</string>
+    <string name="params_setting">参数设置</string>
+    <string name="update_data">数据更新</string>
+    
+    <string name="sample_point">采样点</string>
+    <string name="search_info">污染源</string>
+    <string name="spacial_map">专题图</string>
+    <string name="water_qul">水质评价</string>
+    
+	<string name="mq_server_connecting">正在连接服务器</string>
+	<string name="mq_connected">消息服务器已连接</string>
+	<string name="mq_connect_failed">消息服务器未连接</string>
+	<string name="mq_disconnect">消息服务器连接断开</string>
+	<string name="server_normal">服务器正常</string>
+	<string name="server_abnormal">服务器异常</string>
+	<string name="mq_testing">正在检测消息服务器</string>
+	<string name="server_testing">正在检测服务器</string>
+	
+	<string name="network_diable">网络连接未开启</string>
+	
+	<string name="play">开&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;始</string>
+	<string name="pause">暂&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;停</string>
+	<string name="north_arrow">指&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;北：</string>
+	<string name="rotate">环&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;视：</string>
+	<string name="reset">复&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;位</string>
+	<string name="reset_tv">复&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;位：</string>
+</resources>

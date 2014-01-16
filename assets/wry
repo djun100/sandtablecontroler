@@ -1,0 +1,258 @@
+﻿<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<root>
+	<!--分类包含的操作-->
+	<operations>
+		<operation
+			id="1"
+			name="显示全部" />
+
+		<operation
+			id="2"
+			name="复位" />
+	</operations> 
+	
+	<!--分类-->
+	<categories>
+		<category
+			id="cy"
+			name="餐饮" >
+			<!--子项包含的操作-->
+			<operations>
+				<operation
+					id="1"
+					name="详细信息" />
+
+				<operation
+					id="2"
+					name="在地图上显示" />
+					
+				<operation
+					id="3"
+					name="环视" />
+			</operations> 
+			<subs>
+				<sub
+					id="11"
+					name="麦当劳"
+					longitude="116.3672196965"
+					latitude="39.8516648769"
+					>
+				</sub>
+				<sub
+					id="12"
+					name="海底捞"
+					longitude="116.3672196965"
+					latitude="39.8516648769"
+					>
+				</sub>
+				<sub
+					id="22"
+					name="肯德基"
+					longitude="116.3672196965"
+					latitude="39.8516648769"
+					>
+				</sub>
+				<sub
+					id="32"
+					name="开封菜"
+					longitude="116.3672196965"
+					latitude="39.8516648769"
+					>
+				</sub>
+			</subs>
+		</category>
+		
+		<category
+			id="gcjs"
+			name="工程建设" >
+			<operations>
+				<operation
+					id="1"
+					name="查看详细信息" />
+
+				<operation
+					id="2"
+					name="在地图上显示" />
+					
+				<operation
+					id="3"
+					name="环视" />
+			</operations> 
+			<subs>
+				<sub
+					id="21"
+					name="创富大厦"
+					longitude="116.3672196965"
+					latitude="39.8516648769"
+					>
+				</sub>
+				<sub
+					id="222"
+					name="五角大楼"
+					longitude="116.3672196965"
+					latitude="39.8516648769"
+					>
+				</sub>
+				<sub
+					id="332"
+					name="立水桥"
+					longitude="116.3672196965"
+					latitude="39.8516648769"
+					>
+				</sub>
+				<sub
+					id="232"
+					name="道路"
+					longitude="116.3672196965"
+					latitude="39.8516648769"
+					>
+				</sub>
+			</subs>
+		</category>
+		
+		<category
+			id="jmd"
+			name="居民点" >
+			<operations>
+				<operation
+					id="1"
+					name="查看详细信息" />
+
+				<operation
+					id="2"
+					name="在地图上显示" />
+					
+				<operation
+					id="3"
+					name="环视" />
+			</operations> 
+			<subs>
+				<sub
+					id="132"
+					name="天通苑一区"
+					longitude="116.3672196965"
+					latitude="39.8516648769"
+					>
+				</sub>
+				<sub
+					id="1232"
+					name="立水园"
+					longitude="116.3672196965"
+					latitude="39.8516648769"
+					>
+				</sub>
+				<sub
+					id="4342"
+					name="世纪城"
+					longitude="116.3672196965"
+					latitude="39.8516648769"
+					>
+				</sub>
+				<sub
+					id="234"
+					name="白坊"
+					longitude="116.3672196965"
+					latitude="39.8516648769"
+					>
+				</sub>
+			</subs>
+		</category>
+		
+		<category
+			id="ljc"
+			name="垃圾场" >
+			<operations>
+				<operation
+					id="1"
+					name="查看详细信息" />
+
+				<operation
+					id="2"
+					name="在地图上显示" />
+					
+				<operation
+					id="3"
+					name="环视" />
+			</operations> 
+			<subs>
+				<sub
+					id="1343"
+					name="第一垃圾场"
+					longitude="116.3672196965"
+					latitude="39.8516648769"
+					>
+				</sub>
+				<sub
+					id="672"
+					name="第二垃圾场"
+					longitude="116.3672196965"
+					latitude="39.8516648769"
+					>
+				</sub>
+				<sub
+					id="2543"
+					name="第三垃圾场"
+					longitude="116.3672196965"
+					latitude="39.8516648769"
+					>
+				</sub>
+				<sub
+					id="2767"
+					name="第四垃圾场"
+					longitude="116.3672196965"
+					latitude="39.8516648769"
+					>
+				</sub>
+			</subs>
+		</category>
+		
+		<category
+			id="jd"
+			name="景点" >
+			<operations>
+				<operation
+					id="1"
+					name="查看详细信息" />
+
+				<operation
+					id="2"
+					name="在地图上显示" />
+					
+				<operation
+					id="3"
+					name="环视" />
+			</operations> 
+			<subs>
+				<sub
+					id="1564"
+					name="天安门"
+					longitude="116.3672196965"
+					latitude="39.8516648769"
+					>
+				</sub>
+				<sub
+					id="2732"
+					name="故宫"
+					longitude="116.3672196965"
+					latitude="39.8516648769"
+					>
+				</sub>
+				<sub
+					id="2753"
+					name="朝阳门"
+					longitude="116.3672196965"
+					latitude="39.8516648769"
+					>
+				</sub>
+				<sub
+					id="2977"
+					name="天坛"
+					longitude="116.3672196965"
+					latitude="39.8516648769"
+					>
+				</sub>
+			</subs>
+		</category>
+		
+	</categories>
+</root>

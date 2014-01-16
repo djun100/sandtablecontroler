@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_topbar_high"
+        android:background="@drawable/common_top_layer_without_projection_bg"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/common_topbar_high" >
+		<include 
+		    layout="@layout/connection_state_section"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:orientation="horizontal"
+		    android:layout_toRightOf="@+id/setting"
+		    android:layout_toLeftOf="@+id/control"
+		    />
+        <Button
+            android:id="@+id/setting"
+            android:layout_width="@dimen/menu_button"
+            android:layout_height="@dimen/menu_button"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/right_menu_1" />
+
+        <Button
+            android:id="@+id/control"
+            android:layout_width="@dimen/menu_button"
+            android:layout_height="@dimen/menu_button"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/left_menu_1" />
+    </RelativeLayout>
+
+    <cn.yakang.controler.widget.NoScrollViewpager
+        android:id="@+id/noScrollViewpager1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigation"
+        android:layout_below="@+id/top_title" >
+    </cn.yakang.controler.widget.NoScrollViewpager>
+
+    <include 
+        android:id="@+id/navigation"
+        layout="@layout/activity_main_navigation_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

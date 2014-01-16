@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/cn.yakang.controler"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <cn.yakang.controler.widget.SummaryButton
+        android:id="@+id/item1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:background="@drawable/setting_item_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        app:summaryTextColor="#88F8A500"
+        app:summaryTextSize="@dimen/text_size_two"
+        app:text="@string/server_setting"
+        app:textColor="@color/orange"
+        app:textSize="@dimen/text_size_one"/>
+
+    <cn.yakang.controler.widget.SummaryButton
+        android:id="@+id/item3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:background="@drawable/setting_item_bg"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        app:summaryTextColor="#88F8A500"
+        app:summaryTextSize="@dimen/text_size_two"
+        app:text="@string/update_data"
+        app:textColor="@color/orange"
+        app:textSize="@dimen/text_size_one" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tool_box_fragment_bg_normal" >
+    </LinearLayout>
+
+</LinearLayout>

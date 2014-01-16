@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TitleText.Orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/common_padding"
+        android:text="服务器设置" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/title"
+        android:background="@color/orange" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/CommonText.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务器地址:"
+            />
+
+        <EditText
+            style="@style/CommonText.White"
+            android:id="@+id/server_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:background="@drawable/edittext_bg"
+             >
+        </EditText>
+    </LinearLayout>
+	
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:gravity="center_vertical"
+        android:layout_margin="5dp" >
+
+        <TextView
+            style="@style/CommonText.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="端    口    号:"
+            />
+
+        <EditText
+            style="@style/CommonText.White"
+            android:id="@+id/port_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" 
+            android:background="@drawable/edittext_bg"
+            >
+        </EditText>
+    </LinearLayout>
+	<View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/linearLayout2"
+        android:background="@color/dialog_button_separator" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider2"
+        android:divider="@color/dialog_button_separator"
+        android:dividerPadding="2dp"
+        android:showDividers="middle"
+        android:orientation="horizontal"
+         >
+
+
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            style="@style/DialogButton"
+             />
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            style="@style/DialogButton"
+             />
+
+    </LinearLayout>
+
+</RelativeLayout>

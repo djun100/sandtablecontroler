@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<root>
+	<!--
+		name模块名称
+		id用于区分不同模块
+		h模块层级
+	-->
+	<modules>
+		<module
+			name="综合评价"
+			id="zhpj"
+			h="1"
+		></module>
+		<module
+			name="水质评价"
+			id="szpj"
+			h="1"
+		></module>
+		<module
+			name="污染源"
+			id="wry"
+			h="2"
+		></module>
+		<module
+			name="采样点"
+			id="cyd"
+			h="2"
+		></module>
+	</modules>
+</root>

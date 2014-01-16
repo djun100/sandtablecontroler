@@ -1,0 +1,42 @@
+﻿<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<root>
+	<!--分类包含的操作-->
+	<operations>
+		<operation
+			id="1"
+			name="放大" />
+
+		<operation
+			id="2"
+			name="复位" />
+	</operations> 
+	
+	<!--分类-->
+	<categories>
+		<category
+			id="sw"
+			name="水温" >
+		</category>
+		
+		<category
+			id="ph"
+			name="PH" >
+		</category>
+		
+		<category
+			id="rjy"
+			name="溶解氧" >
+		</category>
+		
+		<category
+			id="zl"
+			name="总磷" >
+		</category>
+		
+		<category
+			id="zd"
+			name="总氮" >
+		</category>
+		
+	</categories>
+</root>

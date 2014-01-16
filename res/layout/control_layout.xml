@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_control"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <cn.yakang.controler.widget.RockerSurfaceView
+        android:id="@+id/rocker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/common_padding" >
+
+        <TextView
+            android:id="@+id/text_angle"
+            style="@style/CommonText.Orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:text="视角调整：" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/CommonText.Orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:text="90度" />
+
+        <TextView
+            android:id="@+id/view_angle_tv"
+            style="@style/CommonText.Orange"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/text_angle"
+            android:text="0度" />
+
+        <cn.yakang.controler.widget.rangeBar.RangeBar
+            xmlns:app1="http://schemas.android.com/apk/res/cn.yakang.controler"
+            android:id="@+id/view_angle_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rangeBarHeight"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/textView1"
+            android:layout_toRightOf="@+id/view_angle_tv"
+            app1:barColor="@color/skyBlue"
+            app1:thumbColorNormal="@color/skyBlue"
+            app1:thumbColorPressed="@color/orange"
+            app1:thumbRadius="@dimen/thumbRadius"
+            app1:tickCount="@integer/viewAngleTickCount"
+            app1:tickHeight="@dimen/tickHeight" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/zoom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:padding="@dimen/common_padding" >
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/CommonText.Orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="缩放级别：" />
+
+        <TextView
+            android:id="@+id/zoom_rate_tv"
+            style="@style/CommonText.Orange"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView2"
+            android:text="0级" />
+
+        <cn.yakang.controler.widget.rangeBar.RangeBar
+            xmlns:app1="http://schemas.android.com/apk/res/cn.yakang.controler"
+            android:id="@+id/zoom_rangeBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rangeBarHeight"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/zoom_rate_tv"
+            app1:barColor="@color/skyBlue"
+            app1:thumbColorNormal="@color/skyBlue"
+            app1:thumbColorPressed="@color/orange"
+            app1:thumbRadius="@dimen/thumbRadius"
+            app1:tickCount="@integer/zoomTickCount"
+            app1:tickHeight="@dimen/tickHeight" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zoom_layout"
+        android:padding="@dimen/common_padding" >
+
+        <TextView
+            android:id="@+id/rotate_tv"
+            style="@style/CommonText.Orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="左右旋转：" />
+
+        <Button
+            android:id="@+id/left_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/rotate_tv"
+            android:text="向左旋转" />
+
+        <Button
+            android:id="@+id/right_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/left_btn"
+            android:text="向右旋转" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout2"
+        android:padding="@dimen/common_padding"
+         >
+
+        <TextView
+            android:id="@+id/tv"
+            style="@style/CommonText.Orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/rotate" />
+
+        <Button
+            android:id="@+id/play_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tv"
+            android:text="@string/play" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout5"
+        android:padding="@dimen/common_padding"
+         >
+
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/CommonText.Orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/north_arrow" />
+
+        <ImageButton
+            android:id="@+id/north_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv2"
+            android:background="@null"
+            android:src="@drawable/north_arrow_btn" />
+
+    </RelativeLayout>
+	<RelativeLayout
+	    android:id="@+id/layout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout3"
+        android:padding="@dimen/common_padding"
+         >
+
+        <TextView
+            android:id="@+id/tv3"
+            style="@style/CommonText.Orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/reset_tv" />
+
+        <Button
+            android:id="@+id/resetBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv3"
+            android:text="@string/reset"
+             />
+
+    </RelativeLayout>
+</RelativeLayout>
